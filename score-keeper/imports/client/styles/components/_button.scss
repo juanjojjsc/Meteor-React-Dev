@@ -1,0 +1,49 @@
+.button {
+  background: transparent;
+  border: 1px solid #848484;
+  color: #848484;
+  //Manita
+  cursor: pointer;
+  font-weight: 600;
+  //center text
+  line-height: 1;
+  margin-left: 1.3rem;
+  outline: none;
+  padding: 1.3rem;
+  transition: background .2s ease, transform .2s ease;
+
+  //SCSS feature
+  &:hover {
+    background: #e8e8e8;
+  }
+
+  &:active {
+    background: #cccccc;
+    transform: scale(1.1);
+  }
+
+}
+
+
+//Button Modifier BEM
+.button--round {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+//Modifiers
+.button--position-1 {
+  color: $darkerGreen;
+  border-color: $darkerGreen;
+}
+
+.button--position-2 {
+  color: $darkerBlue;
+  border-color: $darkerBlue;
+}
+
+.button--position-3 {
+  color: $darkerRed;
+  border-color: $darkerRed;
+}

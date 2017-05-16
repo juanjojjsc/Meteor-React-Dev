@@ -1,0 +1,47 @@
+//Variables
+$green: #e4ede0;
+$darkGreen: darken($green, 15%);
+$darkerGreen: darken($green, 30%);
+$blue: #dfe7ed;
+$darkBlue: darken($blue, 15%);
+$darkerBlue: darken($blue, 30%);
+$red: #eddfdf;
+$darkRed: darken($red, 15%);
+$darkerRed: darken($red, 30%);
+
+//Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//REM sizes depend on this value
+html {
+  font-size: 62.5%;
+}
+
+//Universal Styles
+body {
+  color: #555555;
+  background-color: #f2f2f2;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+input, button, select {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+
+
+@import './components/title-bar';
+@import './components/wrapper';
+@import './components/item';
+@import './components/button';
+@import './components/form';
+@import './components/player';
